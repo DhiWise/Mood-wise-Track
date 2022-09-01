@@ -1,0 +1,51 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { lg: "1120px", xl: "1281px", "2xl": "1441px", "3xl": "1729px" },
+    extend: {
+      colors: {
+        purple_100: "#e0b1d5",
+        pink_900: "#5e0d4a",
+        gray_900: "#311e2c",
+        red_200: "#f0a9af",
+        black_900_3f: "#0000003f",
+        purple_400_19: "#a3559219",
+        black_900_87: "#00000087",
+        bluegray_900: "#262b35",
+        black_900: "#150900",
+        black_902: "#161000",
+        black_901: "#000000",
+        deep_orange_300: "#ff7a59",
+        deep_orange_200: "#f0b1a2",
+        white_A700: "#ffffff",
+        deep_orange_100: "#fad0c4",
+        purple_50: "#ffd1ff",
+        gray_700_11: "#55555511",
+        purple_400: "#a35592",
+      },
+      fontFamily: { gilroy: "Gilroy" },
+      backgroundImage: {
+        gradient: "linear-gradient(90deg ,#fad0c4,#fad0c4,#ffd1ff)",
+        gradient1: "linear-gradient(180deg ,#5e0d4a,#311e2c)",
+      },
+      borderRadius: {
+        radius5: "5px",
+        radius6: "6px",
+        radius8: "8px",
+        radius50: "50%",
+        radius75: "7.5px",
+      },
+      boxShadow: {
+        bs: "0px 0px  10px 4px #55555511",
+        bs1: "0px 6px  74px 0px #0000003f",
+      },
+      borderWidth: { bw15: "1.5px" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
