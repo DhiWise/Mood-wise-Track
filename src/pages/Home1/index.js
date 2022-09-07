@@ -53,7 +53,6 @@ const Home1Page = () => {
       });
   }
   function callApi1(rang = timeRange.long_term) {
-    console.log('rang :>> ', rang);
     const req = {
       headers: {
         Authorization:"Bearer "+ JSON.parse(localStorage.getItem("accessToken")),
@@ -120,8 +119,6 @@ const Home1Page = () => {
     win.focus();
   }
   function handleNavigate3(url) {
-    console.log('url 3:>> ', url);
-
     const win = window.open(
      url,
       "_blank"
@@ -129,19 +126,13 @@ const Home1Page = () => {
     win.focus();
   }
   function handleNavigate4(url) {
-    console.log('url 4:>> ', url);
-
     const win = window.open(url, "_blank");
     win.focus();
   }
   function handleNavigate5(url) {
-    console.log('url 5:>> ', url);
-
     window.location.href =url;
   }
   function handleNavigate6(url) {
-    console.log('url6:>> ', url);
-
     const win = window.open(
      url,
       "_blank"
@@ -149,7 +140,6 @@ const Home1Page = () => {
     win.focus();
   }
   function handleNavigate7(url) {
-    console.log('url 7:>> ', url);
     const win = window.open(
      url,
       "_blank"
